@@ -1,8 +1,8 @@
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
-import TopNavBar from '../components/topnavbar';
+import Layout, { siteTitle } from './components/layout';
+import TopNavBar from './components/topnavbar';
 import utilStyles from '../styles/utils.module.css';
-import Footer from '../components/footer';
+import Footer from './components/footer';
 
 export default function Home() {
   return (
