@@ -1,12 +1,16 @@
-import styles from "./footer.module.css";
+import { useTranslation } from 'next-i18next';
 import Link from "next/link";
+import styles from "./footer.module.css";
 
-const mario = "/"
+const author = "/"
 
 const Footer = () => {
+    const { t } = useTranslation('common')
     return (
         <footer className={styles.footer}>
-            <p>Hecho por <Link href={mario}>Mario C. Mocholí</Link></p>
+            <div className={styles.footerWrapper}>
+                <p>{t('footer_about')} <Link href={author}>{t('footer_about_author')}</Link></p>
+            </div>
         </footer>
     );
 };

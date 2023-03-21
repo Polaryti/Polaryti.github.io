@@ -6,6 +6,7 @@
     margin: 1rem;
     border-radius: 1rem;
     position: relative;
+    cursor: pointer;
 }
 
 .projectitem img {

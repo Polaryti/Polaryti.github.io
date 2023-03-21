@@ -2,11 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./projectitem.module.css";
 
-const ProjectItem = ({ text, href, img, height = 400, width = 400 }) => {
+const ProjectItem = ({ text, href, img }) => {
     return (
         <Link href={href}>
             <div className={styles.projectitem}>
-                <Image src={img} height={height} width={width}></Image>
+            <Image src={img} layout="responsive"></Image>
                 <p>{text}</p>
             </div>
         </Link>
