@@ -5,6 +5,12 @@ import utilStyles from '../styles/utils.module.css';
 import ProjectItem from '../components/projectitem';
 import Footer from '../components/footer';
 
+import imgTest from "../images/DT1567.jpg"
+import imgVenus from "../images/IMG-20230227-WA0006.jpg"
+import imgBuho from "../images/IMG_20221016_213159.jpg"
+import imgGuepardo from "../images/guepardo.jpg"
+import imgDragon from "../images/dragon.jpg"
+
 export default function Test() {
   return (
     <>
@@ -23,10 +29,10 @@ export default function Test() {
           </p>
         </section>
         <section className={utilStyles.projectslist}>
-          <div className={utilStyles.colorfulShadow}><ProjectItem text="Projecto I" href="https://www.netflix.com/browse" ></ProjectItem></div>
-          <ProjectItem text="Projecto II" href="https://es.hboespana.com/" ></ProjectItem>
-          <ProjectItem text="Projecto III" href="https://www.primevideo.com/" ></ProjectItem>
-          <ProjectItem text="Projecto IV" href="https://open.spotify.com/" ></ProjectItem>
+          <div className={utilStyles.colorfulShadow}><ProjectItem text="Venus in diabolous" href="https://www.netflix.com/browse"  img={imgVenus} ></ProjectItem></div>
+          <ProjectItem text="Mirada del bosque" href="https://es.hboespana.com/" img={imgBuho} height={500} ></ProjectItem>
+          <ProjectItem text="Mirada de la sabana" href="https://www.primevideo.com/" img={imgGuepardo} height={650} ></ProjectItem>
+          <ProjectItem text="Fusfus dracónico" href="https://open.spotify.com/" img={imgDragon} height={650} ></ProjectItem>
         </section>
       </Layout>
       <Footer></Footer>

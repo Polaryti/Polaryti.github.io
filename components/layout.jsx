@@ -1,13 +1,13 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import imgProfilePic from '../images/DT1567.jpg';
+import imgProfilePic from '../images/pablo.jpg';
 import imgFavicon from '../images/favicon.jpg';
 import utilStyles from '../styles/utils.module.css';
 import styles from './layout.module.css';
 
 
-const name = 'Nombre / Nombre artistico';
+const name = 'Pablo Martínez Castillejos';
 export const siteTitle = 'Título página (tu nombre)';
 export const siteDescription = 'Descripción'
 const txtBack = 'Volver'
